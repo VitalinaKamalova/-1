@@ -1,12 +1,13 @@
 #include <math.h>
+#include <stdbool.h>
 
-float tcheck(float a, float b, float c) 
+bool checkt(float a, float b, float c) 
 {
     if ((a + b > c) && (a + c > b) && (b + c > a)) 
     {
-        return 1;
+        return true;
     } else {
-        return 0;
+        return false;
            }
 }
 
